@@ -1,4 +1,4 @@
-interface Theme {
+export interface Theme {
     id: number;
     title: string;
     header: string;
@@ -9,3 +9,5 @@ interface Theme {
     category: string;
     status: boolean;
   }
+
+  export {}

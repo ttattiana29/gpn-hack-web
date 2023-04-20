@@ -8,7 +8,6 @@ const Education = () => {
     return (
         <div>
             <Navbar />
-            {/* Education */}
             <Recommend />
             <Carousel />
             <Catalog />

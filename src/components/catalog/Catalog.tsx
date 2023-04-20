@@ -3,6 +3,7 @@ import module from './catalog.module.scss';
 import { themeDirectory } from '../../theme.data';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { Theme } from '../../Theme';
 
 const Catalog: React.FC = () => {
     const [filter, setFilter] = useState<string>('Все');

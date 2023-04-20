@@ -10,8 +10,8 @@ function App() {
   return (
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Education />} />
-        <Route path="/tasks" element={<Tasks />} />
+        <Route path="/gpn-hack-web" element={<Education />} />
+        <Route path="/gpn-hack-web/tasks" element={<Tasks />} />
       </Routes>
     </BrowserRouter>
   )

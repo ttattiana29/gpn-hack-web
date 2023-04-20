@@ -1,3 +1,4 @@
+import { Theme } from './Theme'
 export const themeDirectory: Theme[] = [
     {
       id: 1,

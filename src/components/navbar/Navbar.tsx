@@ -1,51 +1,3 @@
-// import React, { useState } from 'react';
-// import module from '../navbar/navbar.module.scss'
-// import avatar from './images/profile.png'
-// import Union from './icons/Union.png'
-// import Sun from './icons/Sun.png'
-// import Subtract from './icons/Subtract.png'
-// import {NavLink} from 'react-router-dom'
-
-// const Navbar = () => {
-//   return (
-//     <nav className={module.header}>
-//         <div className={module.headerBrand}>
-//             <h2 className={module.headerTitle}>
-//                 Портал Разработчика
-//             </h2>
-//         </div>
-//         <section className={module.headerSections}>
-//             <div className="headerSection">
-//                 <NavLink to="/">
-//                     <p className={module.headerSectionTitle}>Моё обучение</p>
-//                 </NavLink>
-//             </div>
-//             <div className="headerSection">
-//                 <NavLink to="/tasks">
-//                     <p className={module.headerSectionTitle}>Задачи</p>
-//                 </NavLink>
-                
-//             </div>
-//         </section>
-//         <div className={module.headerPanel}>
-//             <section className={module.panelIcons}>
-//                 <img src={Union} className={module.panelIcon}/>
-//                 <img src={Sun} className={module.panelIcon}/>
-//                 <img src={Subtract} className={module.panelIcon}/>
-//             </section>
-//             <div className={module.headerProfile}>
-//                 <img src={avatar} className={module.profileAvatar}/>
-//                 <p className={module.profileUsername}>Михаил Романов</p>
-//             </div>
-//         </div>
-//     </nav>
-
-//   );
-// };
-
-// export default Navbar;
-
-
 import React, { useState } from 'react';
 import module from '../navbar/navbar.module.scss'
 import avatar from './images/profile.png'
@@ -70,12 +22,12 @@ const Navbar = () => {
         </div>
         <section className={`${module.headerSections} ${isMenuOpen ? module.visible : ''}`}>
             <div className="headerSection">
-                <NavLink to="/" onClick={toggleMenu}>
+                <NavLink to="/gpn-hack-web" onClick={toggleMenu}>
                     <p className={module.headerSectionTitle}>Моё обучение</p>
                 </NavLink>
             </div>
             <div className="headerSection">
-                <NavLink to="/tasks" onClick={toggleMenu}>
+                <NavLink to="/gpn-hack-web/tasks" onClick={toggleMenu}>
                     <p className={module.headerSectionTitle}>Задачи</p>
                 </NavLink>
             </div>
