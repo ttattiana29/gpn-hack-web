@@ -2,11 +2,11 @@
 
 ### Установить
 
-    npm install
+    yarn install
 
 ### Запуск
 
-    npm run dev
+    yarn dev
 
 ---
 1. Задание
