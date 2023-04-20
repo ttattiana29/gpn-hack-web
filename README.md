@@ -1,8 +1,12 @@
 # gpn-hack-web
 
+### Установить
+
+    npm install
+
 ### Запуск
 
-    yarn dev
+    npm run dev
 
 ---
 1. Задание
