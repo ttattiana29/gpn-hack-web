@@ -1,0 +1,189 @@
+@import '../../global.scss';
+
+.content {
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    // background-color: blue;
+    padding-top: 48px;
+    box-sizing: border-box;
+}
+
+.contentTitle {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+
+.card {
+    background-color: var(--white);
+    width: 100%;
+    height: 248px;
+    box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16);
+    border-radius: 8px;
+    display: flex;
+    padding: 0 98px;
+    box-sizing: border-box;
+    // justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cardProgress {
+    // background-color: green;
+    height: 170px;
+    margin-right: 49px;
+}
+
+.cardContent {
+    width: 580px;
+    height: auto;
+    // background-color: blue;
+    margin-left: 49px;
+}
+
+.cardContentTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin-bottom: 8px;
+    height: auto;
+    // background-color: green;
+}
+
+.cardContentTheme {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;  
+    color: var(--grey);
+    margin-bottom: 8px;
+}
+
+.cardContentText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 21px;
+}
+span {
+    display: block;
+    padding: 0;
+    margin: 0
+}
+
+.firstChild {
+    position: relative;
+}
+
+.Tasks {
+    color: var(--grey);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    position: absolute;
+    top: 100px;
+    left: 56px;
+}
+.buttons {
+    // background-color: grey;
+    width: 157px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.showMoreButton {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 66, 105, 0.07);
+    color: rgba(0, 57, 92, 0.8);
+    height: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1270px) {
+    .cardContentText {
+        margin-bottom: 15px;
+    }
+    .cardProgress {
+        margin-right: 20px;
+    }
+    .cardContent {
+        width: 650px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        padding: 0 15px;
+    }
+    .cardProgress {
+        margin-right: 8px;
+    }
+    .cardContent {
+        margin-left: 8px;
+    }
+    .showMoreButton {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+}
+@media screen and (max-width: 566px) {
+    .cardContentTitle{
+        margin-top: 10px;
+    }
+
+    .content {
+        width: 95%;
+        height: auto;
+        padding-top: 20px;
+    }
+    .card {
+        height: auto;
+        display: block;
+        padding: 15px 15px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .cardProgress {
+        width: 170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cardContent {
+        margin: 0;
+        width: 100%;
+    }
+    .showMoreButton {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .card {
+        height: auto;
+    }
+    .cardContent {
+        height: 200px;
+    }
+    
+}

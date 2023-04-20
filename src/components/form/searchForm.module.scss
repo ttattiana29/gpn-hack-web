@@ -1,0 +1,133 @@
+@import '../../global.scss';
+
+.container {
+    width: 80%;
+    background-color: var(--white);
+    margin: 50px auto;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.field {
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.field input[type="text"] {
+    padding-left: 8px;
+  }
+
+.field input {
+    position: relative;
+    height: 35px;
+    width: 500px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    outline: none;
+}
+
+.suggestions {
+    position: absolute;
+    width: 508px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-top: none;
+    z-index: 1;
+}
+  
+.suggestions li {
+    padding: 5px;
+    cursor: pointer;
+}
+  
+.suggestions li:hover {
+    background-color: #f5f5f5;
+}
+
+.suggestions .suggestionInfo {
+    font-size: 14px;
+    color: var(--grey);
+}
+
+.activeSuggestion {
+    background-color: #f5f5f5;
+}
+
+.result {
+    margin: 0 auto;
+    text-align: left;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.result h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 150%;
+
+}
+
+.result h2 {
+    color: var(--grey);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+@media (max-width: 740px) {
+    .container {
+        width: 95%;
+        margin: 30px auto;
+    }
+    .result {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .field {
+        width: 300px;
+    }
+
+    .field input {
+        width: 300px;
+    }
+    .suggestions {
+        width: 308px;
+    }
+    .result {
+        width: 85%;
+    }
+
+}

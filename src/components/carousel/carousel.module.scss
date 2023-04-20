@@ -1,0 +1,194 @@
+.container {
+    margin: 0 auto;
+    width: 95%;
+    height: 384px;
+    background: rgba(0, 32, 51, 0.05);
+    border-radius: 8px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+  }
+  
+  .flex {
+    display: flex;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+  }
+  
+.buttonNavig {
+    height: 32px;
+    width: 32px;
+    background-color: rgba(0, 66, 105, 0.07); 
+    border-radius: 99px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 0;
+    border: none; 
+  }
+
+  .buttonNavig img {
+    height: 15px;
+    width: 15px;
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+  }
+
+  .buttonHide {
+    margin-left: 32px;
+    background-color: rgba(0, 66, 105, 0.07);
+    // background-color: yellow;
+    color: rgba(0, 57, 92, 0.8);
+    height: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .cardList {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card {
+    height: 260px;
+    width: 464px;
+    background-color: #fff;
+    padding: 32px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: calc(100% / 3 );
+    margin-bottom: 20px;
+  }
+
+.cardTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 8px;
+}
+
+.cardHeader {
+    color: rgba(0, 32, 51, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 11px;
+}
+
+.cardText {
+    margin-bottom: 38px;
+}
+
+.progressBarContainer {
+    display: flex;
+    margin-left: auto;
+    margin-top: 8px;
+    align-items: center;
+}
+.progressBar {
+    gap: 10px;
+    margin-left: 10px;
+}
+  .circularProgressBar {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+  @media screen and (max-width: 1300px) {
+    .cardList {
+        display: flex;
+        width: 100%;
+        height: auto;
+      }
+    .container {
+        height: auto;     
+        padding: 10px;
+    }
+
+    .card {
+        height: auto;
+        width: auto;
+    }
+    .cardText {
+        margin-bottom: 28px;
+    }
+
+    .card button {
+        margin-bottom: 10px;
+    }
+
+    .flex {
+        display: block;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+
+  }
+  @media screen and (max-width: 700px) {
+    .header{
+        display: block;
+        justify-content: center;
+        width: auto;
+    }
+    .buttonHide {
+        margin: 10px 0 20px 50px;
+        background-color: rgba(0, 66, 105, 0.07);
+        color: rgba(0, 57, 92, 0.8);
+        height: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+      }
+
+    .buttons {
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .card {
+      width: calc(100% / 2 - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+
+

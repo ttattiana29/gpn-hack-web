@@ -1,0 +1,22 @@
+:root {
+    --white: #fff;
+    --blue: #0078D2;
+    --grey: rgba(0, 32, 51, 0.6);
+    --black: #002033
+}
+button {
+    background: #0078D2;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 20px; 
+    box-sizing: border-box;
+    width: fit-content;
+    color: var(--white);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+

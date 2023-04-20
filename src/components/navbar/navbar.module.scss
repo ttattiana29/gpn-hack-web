@@ -1,0 +1,213 @@
+@import '../../global.scss';
+
+a {
+  text-decoration: none;
+  color: var(--grey)
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background: var(--white);
+  display: flex;
+  border-bottom: 1px solid rgba(0, 65, 102, 0.2);
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.headerBrand {
+  width: 220px;
+  height: 60px;
+  padding-left: 24px;
+  padding-top: 18px;
+  box-sizing: border-box;
+}
+
+.headerTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.headerSections {
+  display: flex;
+  width: 211px;
+  height: 60px;
+  padding-top: 22px;
+  box-sizing: border-box;
+  
+}
+
+.headerSectionTitle {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+height: 36px;
+}
+
+.headerPanel {
+  margin-left: auto;
+  display: flex;
+  width: 332px;
+  height: 60px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerProfile {
+  display: flex;
+  align-items: center;
+}
+
+.profileAvatar{
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.profileUsername {
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.panelIcons {
+  height: 15px;
+  margin-right: auto;
+}
+
+.panelIcon {
+  height: 14px;
+  margin-right: 25px;
+}
+
+
+
+
+
+
+
+
+.menuButton {
+  display: none;
+  @media (max-width: 785px) {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 12px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.menuList {
+  display: none;
+  @media (max-width: 785px) {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 240px;
+    padding: 16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.headerSectionTitle,
+.profileUsername {
+  margin: 0;
+}
+
+.headerSection {
+  margin-right: 24px;
+}
+
+.headerPanel {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 785px) {
+  .headerSections,
+  .headerPanel {
+    display: none;
+    text-align: center;
+  }
+  .headerSection {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .headerSectionTitle {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+}
+
+
+
+
+@media (max-width: 785px) {
+  .headerSections {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .headerSections.visible {
+    margin-top: -10px;
+    height: auto;
+    display: block;
+    z-index: 9999;
+  }
+
+  .headerPanel {
+    position: relative;
+  }
+  .mobileMenuButton {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .mobileMenuButtonLine {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  .mobileMenuButton.active .mobileMenuButtonLine:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .mobileMenuButton.active .mobileMenuButtonLine:nth-child(2) {
+    opacity: 0;
+  }
+  .mobileMenuButton.active .mobileMenuButtonLine:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

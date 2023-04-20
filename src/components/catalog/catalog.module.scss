@@ -1,0 +1,176 @@
+@import '../../global.scss';
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 48px;
+    // background-color: green;
+}
+
+.flex {
+    display: flex;
+}
+
+.containerTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+
+.catalog {
+    width: 650px;
+    height: 40px;
+    border: 1px solid rgba(0, 66, 105, 0.28);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.catalog li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-right: 0.5px solid rgba(0, 66, 105, 0.28);
+    border-left: 0.5px solid rgba(0, 66, 105, 0.28);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.catalog .catalogLastLi {
+    border-right: none;
+}
+
+.themeCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+.catalogFirst {
+    // width: 331px;
+    height: 35px;
+    border: 1px solid rgba(0, 66, 105, 0.28);
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 6px;
+    justify-content: center;
+    display: none;
+    
+}
+
+.catalogFirst li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-right: 0.5px solid rgba(0, 66, 105, 0.28);
+    border-left: 0.5px solid rgba(0, 66, 105, 0.28);
+    padding: 0 18px;
+    box-sizing: border-box;
+    // height: 22px;
+    justify-content: center;
+}
+
+.catalogFirst .catalogLastLi {
+    border-right: none;
+}
+
+.themeCard {
+    background: var(--white);
+    box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16);
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.themeTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 8px;
+}
+
+.themeText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 38px;
+}
+
+ .themeHeader {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(0, 32, 51, 0.6);
+    margin-bottom: 11px;
+ }
+
+ .progressBarContainer {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-top: 20px;
+}
+.progressBar {
+    gap: 10px;
+    margin-left: 10px;
+}
+  .circularProgressBar {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+
+  @media (min-width: 1200px) {
+    .themeCards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+  }
+  
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .themeCards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  }
+  
+@media (max-width: 823px) {
+    .flex {
+        display: block;
+    }
+}
+  @media (max-width: 767px) {
+    .themeCards {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 11px;
+    }
+  }
+@media (max-width: 680px) {
+    .catalog2line {
+        text-align: center;
+        width: 330px;
+        margin: 0 auto;
+    }
+    .catalogFirst {
+        display: block;
+        display: inline-flex;
+        width: auto;
+    }
+    .catalog {
+        display: none;
+    }
+}
