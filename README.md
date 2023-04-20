@@ -1,7 +1,8 @@
 # gpn-hack-web
 
 ### Запуск
-``` yarn dev ```
+
+    yarn dev
 
 ---
 1. Задание
